@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from .models import Prueba
+
 # Register your models here.
 class PruebaAdmin(admin.ModelAdmin):
     '''Admin View for Prueba'''
@@ -9,4 +11,4 @@ class PruebaAdmin(admin.ModelAdmin):
         'Documento',
         )
     
-admin.site.register(Admin, PruebaAdmin)
+admin.site.register(Prueba, PruebaAdmin)
